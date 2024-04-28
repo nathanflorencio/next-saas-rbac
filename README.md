@@ -80,3 +80,5 @@ Roles & permissions.
 - Only owners may transfer organization ownership;
 - Only administrators and project authors may update/delete the project;
 - Members can leave their own organization;
+
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI5MGM0NmE2Mi01OTUxLTRkNWMtYTAwZS1lMTQwZDEwNDgxODUiLCJpYXQiOjE3MTQyNzE4NDYsImV4cCI6MTcxNDg3NjY0Nn0.3JJs9J8XuctkKTVJ6RSdq0aCFcDEz6uCeuWSPCbnjpc
