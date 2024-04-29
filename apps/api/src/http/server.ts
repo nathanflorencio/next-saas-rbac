@@ -22,6 +22,7 @@ import { acceptInvite } from '@/http/routes/invites/accept-invite'
 import { createInvite } from '@/http/routes/invites/create-invite'
 import { getInvite } from '@/http/routes/invites/get-invite'
 import { getInvites } from '@/http/routes/invites/get-invites'
+import { getPendingInvites } from '@/http/routes/invites/get-pending-invites'
 import { rejectInvite } from '@/http/routes/invites/reject-invite'
 import { revokeInvite } from '@/http/routes/invites/revoke-invite'
 import { getMembers } from '@/http/routes/members/get-members'
@@ -108,6 +109,7 @@ app.register(getInvites)
 app.register(acceptInvite)
 app.register(rejectInvite)
 app.register(revokeInvite)
+app.register(getPendingInvites)
 
 app.listen({ port: env.SERVER_PORT }).then(() => {
   console.log('HTTP server running!')
