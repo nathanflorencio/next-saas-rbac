@@ -18,9 +18,11 @@ import { createAccount } from '@/http/routes/auth/create-account'
 import { getProfile } from '@/http/routes/auth/get-profile'
 import { requestPasswordRecover } from '@/http/routes/auth/request-password-recover'
 import { resetPassword } from '@/http/routes/auth/reset-password'
+import { acceptInvite } from '@/http/routes/invites/accept-invite'
 import { createInvite } from '@/http/routes/invites/create-invite'
 import { getInvite } from '@/http/routes/invites/get-invite'
 import { getInvites } from '@/http/routes/invites/get-invites'
+import { rejectInvite } from '@/http/routes/invites/reject-invite'
 import { getMembers } from '@/http/routes/members/get-members'
 import { removeMember } from '@/http/routes/members/remove-member'
 import { updateMember } from '@/http/routes/members/update-member'
@@ -102,6 +104,8 @@ app.register(removeMember)
 app.register(createInvite)
 app.register(getInvite)
 app.register(getInvites)
+app.register(acceptInvite)
+app.register(rejectInvite)
 
 app.listen({ port: env.SERVER_PORT }).then(() => {
   console.log('HTTP server running!')
