@@ -1,4 +1,4 @@
-import { api } from './api-client'
+import { api } from '@/http/api-client'
 
 interface GetProfileResponse {
   user: {
