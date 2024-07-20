@@ -35,9 +35,6 @@ importers:
       '@saas/env':
         specifier: workspace:*
         version: link:../../packages/env
-      '@t3-oss/env-nextjs':
-        specifier: ^0.10.1
-        version: 0.10.1(typescript@5.5.3)(zod@3.23.8)
       bcryptjs:
         specifier: ^2.4.3
         version: 2.4.3
@@ -126,6 +123,9 @@ importers:
       cookies-next:
         specifier: ^4.2.1
         version: 4.2.1
+      dayjs:
+        specifier: ^1.11.12
+        version: 1.11.12
       ky:
         specifier: ^1.4.0
         version: 1.4.0
@@ -1504,6 +1504,9 @@ packages:
   data-view-byte-offset@1.0.0:
     resolution: {integrity: sha512-t/Ygsytq+R995EJ5PZlD4Cu56sWa8InXySaViRzw9apusqsOO2bQP+SbYzAhR0pFKoB+43lYy8rWban9JSuXnA==}
     engines: {node: '>= 0.4'}
+
+  dayjs@1.11.12:
+    resolution: {integrity: sha512-Rt2g+nTbLlDWZTwwrIXjy9MeiZmSDI375FvZs72ngxx8PDC6YXOeR3q5LAuPzjZQxhiWdRKac7RKV+YyQYfYIg==}
 
   debug@3.2.7:
     resolution: {integrity: sha512-CFjzYYAi4ThfiQvizrFQevTTXHtnCqWfe7x1AhgEscTz6ZbLbfoLRLPugTQyBth6f8ZERVUSyWHFD/7Wu4t1XQ==}
@@ -4285,6 +4288,8 @@ snapshots:
       call-bind: 1.0.7
       es-errors: 1.3.0
       is-data-view: 1.0.1
+
+  dayjs@1.11.12: {}
 
   debug@3.2.7:
     dependencies:

@@ -15,7 +15,6 @@
     "@prisma/client": "5.17.0",
     "@saas/auth": "workspace:*",
     "@saas/env": "workspace:*",
-    "@t3-oss/env-nextjs": "^0.10.1",
     "bcryptjs": "^2.4.3",
     "fastify": "^4.28.1",
     "fastify-plugin": "^4.5.1",
