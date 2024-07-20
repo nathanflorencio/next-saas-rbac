@@ -2,6 +2,8 @@ import { organizationSchema } from '@saas/auth'
 import { ArrowLeftRight, Crown, UserMinus } from 'lucide-react'
 import Image from 'next/image'
 
+import { removeMemberAction } from '@/app/(app)/org/[slug]/members/actions'
+import { UpdateMemberRoleSelect } from '@/app/(app)/org/[slug]/members/update-member-role-select'
 import { ability, getCurrentOrg } from '@/auth/auth'
 import { Avatar, AvatarFallback } from '@/components/ui/avatar'
 import { Button } from '@/components/ui/button'
@@ -9,9 +11,6 @@ import { Table, TableBody, TableCell, TableRow } from '@/components/ui/table'
 import { getMembers } from '@/http/get-members'
 import { getMembership } from '@/http/get-membership'
 import { getOrganization } from '@/http/get-organization'
-
-import { removeMemberAction } from './actions'
-import { UpdateMemberRoleSelect } from './update-member-role-select'
 
 export async function MemberList() {
   const currentOrg = getCurrentOrg()

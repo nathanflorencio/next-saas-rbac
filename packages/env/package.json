@@ -8,7 +8,7 @@
     "@saas/eslint-config": "workspace:*",
     "@saas/prettier": "workspace:*",
     "@saas/tsconfig": "workspace:*",
-    "@types/node": "^20.12.7"
+    "@types/node": "^20.14.11"
   },
   "eslintConfig": {
     "extends": [
@@ -18,6 +18,6 @@
   "prettier": "@saas/prettier",
   "dependencies": {
     "@t3-oss/env-nextjs": "^0.10.1",
-    "zod": "^3.22.4"
+    "zod": "^3.23.8"
   }
 }
