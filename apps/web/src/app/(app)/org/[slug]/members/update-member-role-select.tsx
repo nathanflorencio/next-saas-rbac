@@ -1,6 +1,6 @@
 'use client'
 
-import { Role } from '@saas/auth'
+import type { Role } from '@saas/auth'
 import type { ComponentProps } from 'react'
 
 import { updateMemberAction } from '@/app/(app)/org/[slug]/members/actions'
